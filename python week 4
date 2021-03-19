@@ -1,0 +1,180 @@
+student@student-ThinkPad-X240:~$ python3
+Python 3.8.6 (default, Jan 27 2021, 15:42:20) 
+[GCC 10.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello AkiraChix")
+Hello AkiraChix
+>>> print("Akirachix", "is", "awesome")
+Akirachix is awesome
+>>> print("2*2 is", 2*2)
+2*2 is 4
+>>> print("Girl is >", boy)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'boy' is not defined
+>>> a = "boy"
+>>> print
+KeyboardInterrupt
+>>> a = "boy"
+>>> print("Girl is >",boy)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'boy' is not defined
+>>> a="boy"
+>>> print("Girl is >",a)
+Girl is > boy
+>>> //does not print arithmetic operations
+  File "<stdin>", line 1
+    //does not print arithmetic operations
+    ^
+SyntaxError: invalid syntax
+>>> print("a\ab")
+ab
+>>> print("a \a b")
+a  b
+>>> print("a\ab")
+ab
+>>> print("Hello\bAkiraChix")
+HellAkiraChix
+>>> print("Hello\nAkiraChix")
+Hello
+AkiraChix
+>>> print("Hello\rAkiraChix")
+AkiraChix
+>>> print("I love \r AkiraChix")
+ AkiraChix
+>>> print("Hello\tAkiraChix")
+Hello	AkiraChix
+>>> print("Hello\vAkiraChix")
+Hello
+     AkiraChix
+>>> print("Hello/vAkiraChix")
+Hello/vAkiraChix
+>>> s="AkiraChix"
+>>> s.upper()
+'AKIRACHIX'
+>>> y=10
+>>> y.upper()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'int' object has no attribute 'upper'
+>>> y="10"
+>>> y.upper()
+'10'
+>>> s.lower()
+'akirachix'
+>>> s.title()
+'Akirachix'
+>>> "hell world".title()
+'Hell World'
+>>> "hello world".title()
+'Hello World'
+>>> s.capitalize()
+'Akirachix'
+>>> "hello world".capitalize()
+'Hello world'
+>>> "hello world".count()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: count() takes at least 1 argument (0 given)
+>>> s.count("a")
+1
+>>> s.count("x")
+1
+>>> s.count("z")
+0
+>>> s.count("i")
+2
+>>> 
+>>> s.replace("i","u")
+'AkuraChux'
+>>> s.isupper()
+False
+>>> s.islower()
+False
+>>> s.isalpha()
+True
+>>> x="10"
+>>> y="10x"
+>>> s.isalpha()
+True
+>>> x.isalpha()
+False
+>>> y.isalpha()
+False
+>>> s.isalnum()
+True
+>>> y.isalnum()
+True
+>>> x.isalnum()
+True
+>>> z="j.com"
+>>> z.isalnum()
+False
+>>> y.isnumeric()
+False
+>>> x.isnumeric()
+True
+>>> s.isnumeric()
+False
+>>> z.isnumeric()
+False
+>>> s.istitle()
+False
+>>> s.iscapital()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'iscapital'
+>>> s.iscapitalized()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'iscapitalized'
+>>> name="Wuanita"
+>>> currency="KES"
+>>> balance="120000"
+>>> print("Hello {} your current balance is {}{}".format(name,currency,balance))
+Hello Wuanita your current balance is KES120000
+>>> print(f"Hello {name}, your current balance is {currency}{balance}")
+Hello Wuanita, your current balance is KES120000
+>>> print("Hello {name}, your current balance is {currency}{balance}")
+Hello {name}, your current balance is {currency}{balance}
+>>> first-name="Kanya"
+  File "<stdin>", line 1
+SyntaxError: cannot assign to operator
+>>> first_name= "Kanya"
+>>> last_name= "Mutisya"
+>>> year_of_birth= 2004
+>>> country= "Kenya"
+>>> fees= 100000
+>>> payment= 78000
+>>> school= "Riara"
+>>> print(f"Hello {first_name} {last_name}, welcome to {school} from {Kenya}.Your fees balance is {fees-payment}
+  File "<stdin>", line 1
+    print(f"Hello {first_name} {last_name}, welcome to {school} from {Kenya}.Your fees balance is {fees-payment}
+                                                                                                               ^
+SyntaxError: EOL while scanning string literal
+>>> print(f"Hello {first_name} {last_name}, welcome to {school} from {Kenya}.Your fees balance is {fees-payment}")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Kenya' is not defined
+>>> print(f"Hello {first_name} {last_name}, welcome to {school} from {country}.Your fees balance is {fees-payment}")
+Hello Kanya Mutisya, welcome to Riara from Kenya.Your fees balance is 22000
+>>> current_year= 2021
+>>> print(f"Hello {first_name} {last_name}, welcome to {school} from {country}.Your fees balance is {fees-payment} and you are {current_year-year_of_birth} years old")
+Hello Kanya Mutisya, welcome to Riara from Kenya.Your fees balance is 22000 and you are 17 years old
+>>> school.upper()
+'RIARA'
+>>> country.upper()
+'KENYA'
+>>> print(f"Hello {first_name} {last_name}, welcome to {school} from {country}.Your fees balance is {fees-payment} and you are {current_year-year_of_birth} years old")
+Hello Kanya Mutisya, welcome to Riara from Kenya.Your fees balance is 22000 and you are 17 years old
+>>> print(f"Hello {first_name} {last_name}, welcome to {school.upper} from {country.upper}.Your fees balance is {fees-payment} and you are {current_year-year_of_birth} years old.")
+Hello Kanya Mutisya, welcome to <built-in method upper of str object at 0x7fd0c978be30> from <built-in method upper of str object at 0x7fd0c978bd30>.Your fees balance is 22000 and you are 17 years old.
+>>> print(f"Hello {first_name} {last_name}, welcome to {school.upper} from {country.upper()}.Your fees balance is {fees-payment} and you are {current_year-year_of_birth} years old.")
+Hello Kanya Mutisya, welcome to <built-in method upper of str object at 0x7fd0c978be30> from KENYA.Your fees balance is 22000 and you are 17 years old.
+>>> print(f"Hello {first_name} {last_name}, welcome to {school.upper()} from {country.upper()}.Your fees balance is {fees-payment} and you are {current_year-year_of_birth} years old.")
+Hello Kanya Mutisya, welcome to RIARA from KENYA.Your fees balance is 22000 and you are 17 years old.
+>>> 
+KeyboardInterrupt
+>>> 
+
